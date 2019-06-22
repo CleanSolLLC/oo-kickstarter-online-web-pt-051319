@@ -1,11 +1,11 @@
 require 'pry'
 
 class Project
-attr_accessor :project_name
+attr_accessor :name
 attr_reader :backers
 
-  def intitialize(project_name)
-    @name = project_name
+  def intitialize(name)
+    @name = name
     @backers = []
   end
 
