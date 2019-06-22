@@ -1,11 +1,11 @@
 require 'pry'
 
 class Backer
-attr_accessor :backer_name, :project
+attr_accessor :name, :project
 attr_reader :backed_projects
 
-  def intitialize(backer_name)
-    @backer_name = backer_name
+  def intitialize(name)
+    @name = name
     @backed_projects = []
   end
 
