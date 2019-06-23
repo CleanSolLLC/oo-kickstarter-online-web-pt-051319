@@ -11,7 +11,8 @@ attr_reader :backed_projects
 
   def back_project(project)
     @backed_projects << project
-    self.add_backer(name)
+    binding.pry
+    project.add_backer(name)
   end
 
 end
